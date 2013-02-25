@@ -28,11 +28,13 @@ After the Riak installation is complete, please ensure that your Riak instance i
 
 And also verify it is bound to the default Riak port (8091):
 
-`$ curl -Is http://localhost:8091 > tmp; \
-   ruby -e 'File.open("tmp") { |f| \
-   if f.gets =~ (/200/i) then puts "We are in business" \
-   else puts "Are you sure you got Riak installed?" end }';\
-   rm tmp`
+<code>
+$ curl -Is http://localhost:8091 > tmp; \
+ruby -e 'File.open("tmp") { |f| \
+if f.gets =~ (/200/i) then puts "We are in business" \
+else puts "Are you sure you got Riak installed?" end }';\
+rm tmp
+</code>
 
 If you see "We are in business", then so far so good. Otherwise, there is a problem with the Riak installation.
 
