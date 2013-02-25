@@ -10,7 +10,7 @@ You must have an installation of jRuby with the jRuby binary added to your usr/b
 
 The current implementation has a dependency on the Riak database.
 
-To install Riak, please follow these [instructions](http://docs.basho.com/riak/latest/tutorials/installation/)
+To install Riak, please follow these [instructions](http://docs.basho.com/riak/latest/tutorials/installation/).
 
 After the Riak installation is complete, please ensure that your Riak instance is bound to the default port, 8091.
 
