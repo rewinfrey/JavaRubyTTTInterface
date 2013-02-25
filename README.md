@@ -20,11 +20,24 @@ If you're not interested in installing Riak from source && you are on OSX && you
 
 `$ brew install riak`
 
-Otherwise, please follow the Riak official installation [instructions] for your OS (http://docs.basho.com/riak/latest/tutorials/installation/).
+Otherwise, please follow the Riak official installation [instructions](http://docs.basho.com/riak/latest/tutorials/installation/) for your OS.
 
 After the Riak installation is complete, please ensure that your Riak instance is working:
 
 `$ riak-admin ring-status`
+
+You want to verify that your output says "All nodes are up and reachable":
+
+    ================================== Claimant ===================================
+    Claimant:  'dev1@127.0.0.1'
+    Status:     up
+    Ring Ready: true
+
+    ============================== Ownership Handoff ==============================
+    No pending changes.
+
+    ============================== Unreachable Nodes ==============================
+    All nodes are up and reachable
 
 And also verify it is bound to the default Riak port (8091):
 
